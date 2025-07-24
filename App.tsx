@@ -6,16 +6,19 @@ import {
 } from 'react-native';
 import FlatCards from './components/FlatCards';
 import ElevatedCards from './components/ElevatedCards';
+import FancyCards from './components/FancyCards';
+
 
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ backgroundColor: 'gray' }}>
       <ScrollView>
-        <FlatCards />
-        <ElevatedCards />
+      <FlatCards />
+      <ElevatedCards />
+      <FancyCards /> 
       </ScrollView>
     </SafeAreaView>
 
